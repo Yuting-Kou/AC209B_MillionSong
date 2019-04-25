@@ -3,3 +3,14 @@
 TheMillion Song Dataset, a project developed from a grant from the Nation Science Foundation,consists of audio features and metadata for a million popular songs.  One of the variables available in the data set is a song’s hotness, a variable constructed by The Echo Nest (which is now owned by Spotify).  The goal of this project is to predict a song’s hotness from other features of a song.  Features that may be particularly predictive include danceability, energy, tempo, and year of the song, though your job is to explore the many features that may be predictive of song hotness.
 
 
+The folder version is as follows:
+
+    
+    ├── AC209B_MillionSong 
+        ├── data           <- the folder contains all the data
+        │   ├── songs  <- the folder contains the unzip files from "Songs.zip"
+        │   │   ├── ignite_talks   <- AC297r Ignite presentations
+        │   │   ├── ...
+        │   │   └──     
+        ├── src           <- the folder contains all the script
+        │   ├── EDA    <- Preprocessing and eda analysis
