@@ -11,3 +11,16 @@ The folder version is as follows:
         │   ├── music.csv
         ├── src           <- the folder contains all the script
         │   ├── EDA    <- Preprocessing and eda analysis
+
+Brainstorming of the feature and projects:
+
+1. Models:
+2. New Features:
+    - Artician: 
+        - First characters of their names
+        - Attractiveness - Face
+    - Music:
+        - lyrics
+        - title name
+        - style
+        
