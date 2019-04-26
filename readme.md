@@ -8,9 +8,6 @@ The folder version is as follows:
     
     ├── AC209B_MillionSong 
         ├── data           <- the folder contains all the data
-        │   ├── songs  <- the folder contains the unzip files from "Songs.zip"
-        │   │   ├── songs0.csv   
-        │   │   ├── ...
-        │   │   └── songs999.csv
+        │   ├── music.csv
         ├── src           <- the folder contains all the script
         │   ├── EDA    <- Preprocessing and eda analysis
