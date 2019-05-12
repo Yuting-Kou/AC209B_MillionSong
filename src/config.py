@@ -18,10 +18,10 @@ mbtag = ['artist_mbtags',
  'mbtag_1',
  'mbtag_2']
 
-raw_data_col = ['Youtube_Hotness', 'artist.hotttnesss', 
+raw_data_col = ['Youtube_Hotness', 'artist.hotttnesss',
        'bars_confidence', 'bars_start',
        'beats_confidence', 'beats_start', 'duration', 'end_of_fade_in',
-       'familiarity', 'key', 'key_confidence','loudness', 'mode', 'mode_confidence', 
+       'familiarity', 'key', 'key_confidence','loudness', 'mode', 'mode_confidence',
        'start_of_fade_out', 'tatums_confidence', 'tatums_start', 'tempo',
        'terms_freq', 'time_signature', 'time_signature_confidence',
         'decade', 'artist_firstname', 'artist_lastname',
