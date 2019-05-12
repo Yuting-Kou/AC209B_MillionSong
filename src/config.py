@@ -1,27 +1,22 @@
 dropcol = ['artist.id', 'artist.name','artist_mbtags',
            'artist_mbtags_count',
-           'song.id','familiarity',
+           'song.id',#'familiarity',
            'longitude','release.name','song.hotttnesss',
-           'artist.id','year','release.id','terms', 'terms_freq',
-            'title','location','latitude','mbtags_count',
-           'country','similar','Unnamed: 0','Youtube_Hotness', 'Unnamed: 0.1',
+           'artist.id','year','release.id','terms', #'terms_freq',
+            'title','location','latitude', #'mbtags_count',
+           'country','similar','Youtube_Hotness', #'Unnamed: 0.1','Unnamed: 0',
            'similar_hotness',
-          'title_svd_3_10','title_svd_4_10',
-          'y_fit_title','y_fit_release','y_fit_term',  'bars_confidence', 'beats_confidence',
-          'key_confidence', 'mode_confidence', 'tatums_confidence', 'time_signature_confidence', 'mbtag_0', 'mbtag_1', 'mbtag_2']
+          #'title_svd_3_10','title_svd_4_10',
+          #'y_fit_title','y_fit_release','y_fit_term', # 'bars_confidence', 'beats_confidence', 
+          #'key_confidence', 'mode_confidence', 'tatums_confidence', 'time_signature_confidence',
+          'mbtag_0', 'mbtag_1', 'mbtag_2']
 
 mbtag = ['artist_mbtags',
  'artist_mbtags_count',
  'mbtags_count',
  'mbtag_0',
  'mbtag_1',
- 'mbtag_2',
- 'artist_mbtags.1',
- 'artist_mbtags_count.1',
- 'mbtags_count.1',
- 'mbtag_0.1',
- 'mbtag_1.1',
- 'mbtag_2.1']
+ 'mbtag_2']
 
 engineered = ['release.name_neu','release.name_pos','release.name_neg',
              'title_neg','title_neu', 'title_pos',
