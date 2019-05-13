@@ -37,3 +37,47 @@ augmented = ['artist_freq','grammy_relevance']
 
 select= ['y_fit_release', 'y_fit_term', 'duration', 'loudness', 'artist_freq',
        'artist_firstname', 'y_fit_title', 'start_of_fade_out', 'tempo']
+
+
+import plotly.offline as py
+py.init_notebook_mode(connected=True)
+import plotly.graph_objs as go
+import plotly.tools as tls
+ 
+def plot_importance(col_y,feature_dataframe,title='Barplots of Average Stacking Feature Importance',ntop=10):
+    data_tmp=feature_dataframe.sort_values(col_y,ascending=False)[:ntop]
+    y = data_tmp[col_y].values
+    x = data_tmp['features'].values
+    
+    data = [go.Bar(
+                x= x,
+                 y= y,
+                width = 0.5,
+                marker=dict(
+                   color = y,
+                colorscale='Portland',
+                showscale=True,
+                reversescale = False
+                ),
+                opacity=0.6
+            )]
+
+    layout= go.Layout(
+        autosize= True,
+        title= title,
+        hovermode= 'closest',
+    #     xaxis= dict(
+    #         title= 'Pop',
+    #         ticklen= 5,
+    #         zeroline= False,
+    #         gridwidth= 2,
+    #     ),
+        yaxis=dict(
+            title= 'Feature Importance',
+            ticklen= 5,
+            gridwidth= 2
+        ),
+        showlegend= False
+    )
+    fig = go.Figure(data=data, layout=layout)
+    py.iplot(fig, filename='bar-direct-labels')
